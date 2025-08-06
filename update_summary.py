@@ -12,7 +12,7 @@ client = OpenAI(
 today = datetime.utcnow() + timedelta(hours=9)  # 한국 시간 기준 (KST)
 yesterday = today - timedelta(days=1)
 file_date = yesterday.strftime("%y%m%d")
-til_path = f"TIL/TIL:{file_date}.md"
+til_path = f"TIL/{file_date}.md"
 
 # README 기본 정보
 timestamp = today.strftime("%Y-%m-%d %H:%M:%S")
